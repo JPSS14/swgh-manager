@@ -1,14 +1,15 @@
-import { makeStyles } from '@mui/styles';
+import { Box as MuiBox, BoxProps } from '@mui/material';
+import { styled } from '@mui/system';
 
-export const useStyles = makeStyles(() => {
+export const Box = styled(MuiBox)<BoxProps>(({ theme }) => {
+  const { swgh } = theme.palette;
   return {
-    root: {
-      background: '#000',
-      color: '#fff',
-      '& h1':{
-        padding: 0,
-        margin: 0
-      }
+    width: '100vw',
+    color: swgh.white,
+    background: swgh.dark,
+    padding: `${theme.spacing(1.5)} ${theme.spacing(1)}`,
+    '& .MuiTypography-root':{
+      fontSize: '20px',
     }
-  };
+  }
 });

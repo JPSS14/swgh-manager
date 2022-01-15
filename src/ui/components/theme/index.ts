@@ -1,0 +1,1 @@
+export {SwghThemeProvider} from './theme.provider';
