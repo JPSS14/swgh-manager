@@ -1,3 +1,4 @@
+import { Footer } from '../footer';
 import { Header } from '../header';
 import { ContentStyled } from './layout.style';
 
@@ -12,6 +13,7 @@ export const Layout = ({ children }: LayoutProps) => {
       <ContentStyled>
         {children}
       </ContentStyled>
+      <Footer/>
     </div>
   );
 }
