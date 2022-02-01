@@ -7,6 +7,7 @@ export const Box = styled(MuiBox)<BoxProps>(({ theme }) => {
     width: '100vw',
     color: swgh.white,
     background: swgh.dark,
+    marginBottom: theme.spacing(2),
     padding: `${theme.spacing(1.5)} ${theme.spacing(1)}`,
     '& .MuiTypography-root':{
       fontSize: '20px',

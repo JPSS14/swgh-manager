@@ -1,9 +1,12 @@
-import { Layout } from '../../components/layout';
+import { BoxCt } from 'ui/components/box-ct';
+import { Layout } from 'ui/components/layout';
 
 export const Dashboard = () => {
   return(
     <Layout>
-      <h1>Olás</h1>
+      <BoxCt title='Farm Diário'>
+        sdssw
+      </BoxCt>
     </Layout>
   );
 }
