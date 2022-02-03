@@ -5,7 +5,7 @@ export const BoxContainer = styled(Box)<BoxProps>(({ theme }) => {
   const {swgh} = theme.palette;
   return {
     background: swgh.dark,
-    width: '200px',
+    width: '100%',
     padding: `${theme.spacing(0.5)}`,
     color: swgh.light,
   };
