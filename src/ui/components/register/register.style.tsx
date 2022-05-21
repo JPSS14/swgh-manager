@@ -8,5 +8,6 @@ export const BoxContainer = styled(Box)<BoxProps>(({ theme }) => {
     width: '100%',
     padding: `${theme.spacing(0.5)}`,
     color: swgh.light,
+    borderRadius: theme.spacing(1)
   };
 });

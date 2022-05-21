@@ -7,9 +7,9 @@ export interface BoxCtProps {
   md?: boolean;
 }
 
-export const BoxCt = ({ children, title }: BoxCtProps) => {
+export const BoxCt = ({ children, title, md }: BoxCtProps) => {
   return (
-    <BoxCtStytle>
+    <BoxCtStytle md={md}>
       {title && <Typography component='h1' variant='h1'>{title}</Typography>}
       {children}
     </BoxCtStytle>

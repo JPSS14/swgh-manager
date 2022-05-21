@@ -8,21 +8,21 @@ export const Dashboard = () => {
   const {credits, crystals, omega, shipCredits, zeta} = dayliFarm;
   return (
     <Layout>
-      <BoxCt title='Farm Diário'>
+      <BoxCt title='Farm Diário' md>
         <Grid container spacing={2}>
-          <Grid item xs={2}>
+          <Grid item xs={4} container>
             <Register title='Créditos' value={credits} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} container>
             <Register title='Cristais' value={crystals} />
           </Grid>
-          <Grid item xs={3}>
-            <Register title='Créditos de Naves' value={shipCredits} />
+          <Grid item xs={4} container>
+            <Register title='Créditos Naves' value={shipCredits} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} container>
             <Register title='Omega' value={omega} />
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={4} container>
             <Register title='Zeta' value={zeta} />
           </Grid>
         </Grid>
